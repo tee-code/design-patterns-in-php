@@ -1,0 +1,9 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Template\\" : "template/src",
+      "Adapter\\" : "adapter/src",
+      "Decorator\\" : "decorator/src"
+    }
+  }
+}
