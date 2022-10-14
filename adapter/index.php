@@ -1,12 +1,11 @@
 <?php
 require '../vendor/autoload.php';
 
-use Adapter\Media;
 use Adapter\Video;
 use Adapter\Kindle;
 use Adapter\eReaderAdapter;
 
-$media = new Media(new Video());
+$media = new Video;
 
 $media->play();
 $media->forward();
@@ -14,9 +13,9 @@ $media->backward();
 
 echo "<br/>";
 
-$media = new Media(new eReaderAdapter(new Kindle()));
+$kindle = new eReaderAdapter(new Kindle);
 
-$media->play();
-$media->forward();
-$media->backward();
+$kindle->play();
+$kindle->forward();
+$kindle->backward();
 

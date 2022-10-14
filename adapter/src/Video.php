@@ -4,7 +4,7 @@
 namespace Adapter;
 
 
-class Video implements VideoInterface
+class Video implements MediaInterface
 {
 
     public function play()

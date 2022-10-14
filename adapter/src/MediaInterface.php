@@ -4,7 +4,7 @@
 namespace Adapter;
 
 
-interface VideoInterface
+interface MediaInterface
 {
     public function play();
 

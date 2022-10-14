@@ -2,11 +2,10 @@
 
 
 namespace Adapter;
-use Adapter\eReaderInterface;
 
-class eReaderAdapter implements VideoInterface
+class eReaderAdapter implements MediaInterface
 {
-    protected $eReader;
+    protected eReaderInterface $eReader;
 
     public function __construct(eReaderInterface $eReader)
     {
